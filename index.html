@@ -12,15 +12,20 @@
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Appliance Warranty Repair Across the Carolinas, Tennessee and Virginia | Tradewerx Inc." />
 <meta property="og:description" content="Factory-standard warranty repair on premium appliances, statewide in North Carolina and in the reachable parts of South Carolina, Tennessee and Virginia. One service call per day, routed from Lenoir." />
-<meta property="og:image" content="tradewerx-logo.jpg" />
-<link rel="canonical" href="https://tradewerx.com/" />
+<meta property="og:image" content="https://tradewerxnc.com/tradewerx-logo.jpg" />
+<meta property="og:url" content="https://tradewerxnc.com/" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Appliance Warranty Repair Across the Carolinas, Tennessee and Virginia | Tradewerx Inc." />
+<meta name="twitter:description" content="Factory-standard warranty repair on premium appliances, statewide in North Carolina and in the reachable parts of South Carolina, Tennessee and Virginia. One service call per day, routed from Lenoir." />
+<meta name="twitter:image" content="https://tradewerxnc.com/tradewerx-logo.jpg" />
+<link rel="canonical" href="https://tradewerxnc.com/" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":["LocalBusiness","HomeAndConstructionBusiness"],"@id":"https://tradewerx.com/#business","name":"Tradewerx Inc.","description":"Appliance warranty and out-of-warranty repair for premium residential appliances throughout North Carolina and the neighboring parts of South Carolina, Tennessee and Virginia.","email":"tradewerx.inc@gmail.com","image":"tradewerx-logo.jpg","address":{"@type":"PostalAddress","streetAddress":"2580 Hickory Blvd SW","addressLocality":"Lenoir","addressRegion":"NC","postalCode":"28645","addressCountry":"US"},"areaServed":[{"@type":"State","name":"North Carolina"},{"@type":"State","name":"South Carolina"},{"@type":"State","name":"Tennessee"},{"@type":"State","name":"Virginia"}],"knowsAbout":["Sub-Zero","Wolf","Cove","Miele","Bosch","GE Monogram","Speed Queen","LG","Samsung","Whirlpool","Frigidaire"],"priceRange":"$$","founder":{"@type":"Person","name":"Justin Keatts"},"makesOffer":{"@type":"Offer","itemOffered":{"@type":"Service","name":"Appliance warranty service call","serviceType":"Appliance repair","areaServed":[{"@type":"State","name":"North Carolina"},{"@type":"State","name":"South Carolina"},{"@type":"State","name":"Tennessee"},{"@type":"State","name":"Virginia"}]}}},
-{"@type":"FAQPage","@id":"https://tradewerx.com/#faq","mainEntity":[
+{"@type":["LocalBusiness","HomeAndConstructionBusiness"],"@id":"https://tradewerxnc.com/#business","name":"Tradewerx Inc.","description":"Appliance warranty and out-of-warranty repair for premium residential appliances throughout North Carolina and the neighboring parts of South Carolina, Tennessee and Virginia.","email":"tradewerx.inc@gmail.com","image":"tradewerx-logo.jpg","address":{"@type":"PostalAddress","streetAddress":"2580 Hickory Blvd SW","addressLocality":"Lenoir","addressRegion":"NC","postalCode":"28645","addressCountry":"US"},"areaServed":[{"@type":"State","name":"North Carolina"},{"@type":"State","name":"South Carolina"},{"@type":"State","name":"Tennessee"},{"@type":"State","name":"Virginia"}],"knowsAbout":["Sub-Zero","Wolf","Cove","Miele","Bosch","GE Monogram","Speed Queen","LG","Samsung","Whirlpool","Frigidaire"],"priceRange":"$$","founder":{"@type":"Person","name":"Justin Keatts"},"makesOffer":{"@type":"Offer","itemOffered":{"@type":"Service","name":"Appliance warranty service call","serviceType":"Appliance repair","areaServed":[{"@type":"State","name":"North Carolina"},{"@type":"State","name":"South Carolina"},{"@type":"State","name":"Tennessee"},{"@type":"State","name":"Virginia"}]}}},
+{"@type":"FAQPage","@id":"https://tradewerxnc.com/#faq","mainEntity":[
 {"@type":"Question","name":"Do you perform manufacturer warranty repairs?","acceptedAnswer":{"@type":"Answer","text":"Yes. Tradewerx performs in-warranty repair authorized through premium appliance providers, along with out-of-warranty and extended-service-plan work."}},
 {"@type":"Question","name":"What areas do you cover?","acceptedAnswer":{"@type":"Answer","text":"All 100 North Carolina counties, plus upstate South Carolina, east Tennessee and southwest Virginia. Calls are routed from Lenoir in Caldwell County and the practical limit is about eight hours of driving each way, so nearby counties are scheduled soonest and longer trips are booked as dedicated travel days."}},
 {"@type":"Question","name":"How many service calls do you run per day?","acceptedAnswer":{"@type":"Answer","text":"One. A single call per day means the technician stays on your appliance until the diagnosis is complete rather than cutting the visit short for the next stop."}},
@@ -417,8 +422,11 @@
           </fieldset>
 
           <div style="display:flex; align-items:center; gap:20px; flex-wrap:wrap">
-            <button type="submit" style="background:#2f9e93; color:#08120f; border:none; font-weight:700; font-size:15px; letter-spacing:0.07em; text-transform:uppercase; padding:17px 34px; border-radius:5px; cursor:pointer" style-hover="background:#3fb8ab">Submit request</button>
+            <button type="submit" disabled="{{ submitting }}" style="background:#2f9e93; color:#08120f; border:none; font-weight:700; font-size:15px; letter-spacing:0.07em; text-transform:uppercase; padding:17px 34px; border-radius:5px; cursor:pointer" style-hover="background:#3fb8ab">{{ submitLabel }}</button>
             <p style="font-size:13.5px; color:#6d7178; margin:0; max-width:44ch">Submitting does not book the date. Tradewerx reviews the request and confirms by email.</p>
+            <sc-if value="{{ hasSubmitError }}" hint-placeholder-val="{{ false }}">
+              <p role="alert" style="width:100%; margin:0; background:#fdf1ef; border:1px solid #e6c4bd; border-left:3px solid #a94a38; border-radius:4px; padding:12px 14px; font-size:14px; color:#7d3527">{{ submitError }}</p>
+            </sc-if>
           </div>
         </form>
 
@@ -692,8 +700,11 @@
           </fieldset>
 
           <div style="display:flex; align-items:center; gap:20px; flex-wrap:wrap">
-            <button type="submit" style="background:#2f9e93; color:#08120f; border:none; font-weight:700; font-size:15px; letter-spacing:0.07em; text-transform:uppercase; padding:17px 34px; border-radius:5px; cursor:pointer" style-hover="background:#3fb8ab">Send subcontract request</button>
+            <button type="submit" disabled="{{ submitting }}" style="background:#2f9e93; color:#08120f; border:none; font-weight:700; font-size:15px; letter-spacing:0.07em; text-transform:uppercase; padding:17px 34px; border-radius:5px; cursor:pointer" style-hover="background:#3fb8ab">{{ partnerSubmitLabel }}</button>
             <p style="font-size:13.5px; color:#6d7178; margin:0; max-width:44ch">Goes straight to tradewerx.inc@gmail.com. Justin replies with availability, rates and insurance documents.</p>
+            <sc-if value="{{ hasSubmitError }}" hint-placeholder-val="{{ false }}">
+              <p role="alert" style="width:100%; margin:0; background:#fdf1ef; border:1px solid #e6c4bd; border-left:3px solid #a94a38; border-radius:4px; padding:12px 14px; font-size:14px; color:#7d3527">{{ submitError }}</p>
+            </sc-if>
           </div>
         </form>
 
@@ -782,14 +793,18 @@
       <section style="max-width:760px; margin:0 auto; padding:88px 24px 110px">
         <p style="font-family:'Barlow Condensed',sans-serif; font-size:14px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:#2f9e93; margin:0 0 14px">Request received</p>
         <h1 style="font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:48px; line-height:1.02; text-transform:uppercase; margin:0 0 18px">Reference {{ lastRef }}</h1>
-        <p style="font-size:18px; line-height:1.6; color:#4c5158; margin:0 0 26px; text-wrap:pretty">The request is in the queue. Tradewerx confirms the date by email. Keep the reference number handy in case you need to add anything.</p>
+        <p style="font-size:18px; line-height:1.6; color:#4c5158; margin:0 0 26px; text-wrap:pretty">{{ thanksLead }}</p>
         <div style="background:#fff; border:1px solid #e2ddd4; border-radius:8px; padding:24px 26px; margin:0 0 28px">
           <p style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:12.5px; line-height:1.55; white-space:pre-wrap; color:#4c5158; margin:0">{{ lastSummary }}</p>
         </div>
-        <p style="font-size:14px; line-height:1.6; color:#6d7178; margin:0 0 26px">Two things just happened: a PDF of this completed form downloaded to your device, and your mail app opened addressed to Tradewerx. Attach that PDF to the email and press send. Browsers cannot attach a file for you, so that last step is yours.</p>
+        <p style="font-size:14px; line-height:1.6; color:#6d7178; margin:0 0 26px">{{ thanksNote }}</p>
+
+        <div style="background:#eef7f5; border:1px solid #bfded9; border-left:3px solid #2f9e93; border-radius:6px; padding:20px 22px; margin:0 0 30px">
+          <p style="font-family:'Barlow Condensed',sans-serif; font-size:13px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#2f9e93; margin:0 0 10px">About Tradewerx</p>
+          <p style="font-size:15px; line-height:1.65; color:#1f4d48; margin:0; text-wrap:pretty">Tradewerx is family owned and operated, based in Lenoir and run by Justin Keatts, with more than twenty years in the trades. One service call a day, routed by drive time from the shop &mdash; which is why the date gets confirmed rather than promised up front. You are dealing with the person who will be standing in front of the appliance.</p>
+        </div>
         <div style="display:flex; gap:14px; flex-wrap:wrap">
-          <a href="{{ mailtoLink }}" style="background:#2f9e93; color:#08120f; font-weight:700; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; padding:15px 26px; border-radius:5px" style-hover="background:#3fb8ab">Send this request to Tradewerx</a>
-          <button type="button" onClick="{{ downloadPdf }}" style="cursor:pointer; border:1px solid #d5cfc5; background:none; color:#14161a; font-weight:600; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; padding:15px 26px; border-radius:5px" style-hover="border-color:#14161a">Download as PDF</button>
+          <button type="button" onClick="{{ downloadPdf }}" style="cursor:pointer; background:#2f9e93; color:#08120f; border:none; font-weight:700; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; padding:15px 26px; border-radius:5px" style-hover="background:#3fb8ab">Download a copy as PDF</button>
           <a href="#home" style="border:1px solid #d5cfc5; color:#14161a; font-weight:600; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; padding:15px 26px; border-radius:5px" style-hover="border-color:#14161a">Back to home</a>
         </div>
       </section>
@@ -854,9 +869,11 @@ const BLANK = { name:'', phone:'', email:'', requester:'Homeowner', street:'', c
 const KNOWN_ROUTES = ['home','','request','thanks','partners','area','contact','dashboard'];
 const STORE = 'tradewerx.scheduling.v2';
 const NOTIFY_TO = 'tradewerx.inc@gmail.com';
-/* Paste a form endpoint here (Formspree, Basin, a Google Apps Script web app, or your own
-   handler) and every submission is posted to it automatically, with no page of its own. */
-const NOTIFY_ENDPOINT = '';
+/* The Google Apps Script web app that receives submissions. It runs under
+   tradewerx.inc@gmail.com: it emails Justin a branded PDF, files a text record and the
+   photos in Drive, assigns the reference number, and sends the customer an automatic
+   reply. Deploy it (apps-script/SETUP.md) and paste the /exec URL here. */
+const NOTIFY_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyZYfI7piki0bqXwTZPj8zwX755VYm1D-vY7_udmRQNhHs0gWm-N8_SGqOzZkVGNNoduA/exec';
 
 const PARTNER_BLANK = { company:'', kind:'Appliance dealer or retailer', contact:'', phone:'', email:'', site:'',
   workType:'Overflow service calls', volume:'1 to 5', brands:'', territory:'', rate:'', parts:'Partner supplies parts',
@@ -864,9 +881,10 @@ const PARTNER_BLANK = { company:'', kind:'Appliance dealer or retailer', contact
 
 class Component extends DCLogic {
   state = { route: (location.hash || '#home').slice(1), f: Object.assign({}, BLANK),
-    requests: [], jobs: [], blocked: [], monthShift: 0, sel: null, drag: null, lastRef: '', lastSummary: '', mailtoLink: '#' };
+    requests: [], jobs: [], blocked: [], monthShift: 0, sel: null, drag: null, lastRef: '', lastSummary: '', lastKind: '', submitting: false, submitError: '' };
 
   componentDidMount() {
+    this._loadedAt = Date.now();
     this._onHash = () => { this.setState({ route: (location.hash || '#home').slice(1) }); window.scrollTo(0, 0); };
     window.addEventListener('hashchange', this._onHash);
     let saved = null;
@@ -983,21 +1001,119 @@ class Component extends DCLogic {
         row('Preferred date', f.date1),
         row('Backup date', f.date2),
         row('Arrival window', f.window),
-        row('Photos attached', this._photoCount ? this._photoCount + ' (attach them to this email)' : '')
+        row('Photos attached', this._photoCount ? String(this._photoCount) : '')
       ]),
       '',
       'One service call per day. Tradewerx confirms the date by reply.'
     ].filter(l => l !== '').join('\n');
   }
 
-  notify(kind, ref, summary, payload) {
-    if (!NOTIFY_ENDPOINT) return;
+  /* Posts a submission to the intake endpoint and resolves to { ok, ref }.
+     The body is deliberately url-encoded. A JSON content-type would make the browser
+     send a CORS preflight, and Apps Script never answers OPTIONS, so the request would
+     die before it reached the handler. */
+  async send(kind, structure, contact, photos) {
+    if (!NOTIFY_ENDPOINT || NOTIFY_ENDPOINT.indexOf('PASTE_') === 0) {
+      return { ok: false, error: 'no_endpoint',
+        message: 'The request form is not connected yet. Please email ' + NOTIFY_TO + ' directly.' };
+    }
+    const body = new URLSearchParams();
+    body.append('kind', kind);
+    body.append('__structure', JSON.stringify(structure));
+    body.append('full_name', contact.name || '');
+    body.append('email', contact.email || '');
+    body.append('phone', contact.phone || '');
+    if (contact.company) body.append('company', contact.company);
+    body.append('form_loaded_at', String(this._loadedAt || 0));
+    (photos || []).slice(0, 6).forEach((ph, i) => body.append('photo_' + (i + 1), ph.url));
     try {
-      fetch(NOTIFY_ENDPOINT, {
-        method: 'POST', mode: 'cors', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ to: NOTIFY_TO, kind: kind, reference: ref, subject: kind + ' ' + ref, summary: summary, data: payload })
-      }).catch(() => {});
-    } catch (e) {}
+      const res = await fetch(NOTIFY_ENDPOINT, { method: 'POST', body: body });
+      return await res.json();
+    } catch (e) {
+      return { ok: false, error: 'network',
+        message: 'We could not reach the server. Check your connection and try again.' };
+    }
+  }
+
+  /* The blocks the emailed PDF is built from. Same grouping and wording as summarize(),
+     so the PDF, the on-screen summary and the Drive record all agree. */
+  requestStructure(f) {
+    const flags = [];
+    if (f.noPower) flags.push('No power at the unit');
+    if (f.leaking) flags.push('Actively leaking water');
+    if (f.noise) flags.push('Burning smell or loud noise');
+    if (f.pets) flags.push('Pets on the property');
+    if (f.priorVisit) flags.push('Another company has already been out');
+    const mins = this.minsFor(f);
+    const S = (title, fields) => ({ title: title, fields: fields.filter(x => x && x.value) });
+    return [
+      S('Who and where', [
+        { label: 'Name', value: f.name },
+        { label: 'Phone', value: f.phone },
+        { label: 'Email', value: f.email },
+        { label: 'Requested by', value: f.requester },
+        { label: 'Service address', value: f.street },
+        { label: 'City', value: [f.city, f.state, f.zip].filter(Boolean).join(', ') },
+        { label: f.state === 'NC' ? 'County' : 'Nearest metro', value: this.placeLabel(f) },
+        { label: 'Drive from Lenoir', value: mins != null ? 'about ' + this.fmt(mins) + ' one way' : '' }
+      ]),
+      S('The appliance', [
+        { label: 'Type', value: f.appliance },
+        { label: 'Brand', value: f.brand },
+        { label: 'Model number', value: f.model },
+        { label: 'Serial number', value: f.serial },
+        { label: 'Approx. age', value: f.age },
+        { label: 'Purchase date', value: f.purchased }
+      ]),
+      S('Warranty', [
+        { label: 'Status', value: f.warranty },
+        { label: 'Provider or retailer', value: f.provider },
+        { label: 'Claim / dispatch no.', value: f.claim }
+      ]),
+      S('Symptoms', [
+        { label: 'Primary symptom', value: f.symptom },
+        { label: 'Error code', value: f.errorCode },
+        { label: 'How long', value: f.duration },
+        { label: 'Flags', value: flags.join('; ') },
+        { label: 'Description', value: f.details }
+      ]),
+      S('Access on site', [
+        { label: 'Unit location', value: f.unitLocation },
+        { label: 'Install type', value: f.install },
+        { label: 'Gate / entry code', value: f.gate },
+        { label: 'Notes', value: f.access }
+      ]),
+      S('Scheduling', [
+        { label: 'Preferred date', value: f.date1 },
+        { label: 'Backup date', value: f.date2 },
+        { label: 'Arrival window', value: f.window }
+      ])
+    ].filter(sec => sec.fields.length);
+  }
+
+  partnerStructure(p) {
+    const S = (title, fields) => ({ title: title, fields: fields.filter(x => x && x.value) });
+    return [
+      S('Company', [
+        { label: 'Company', value: p.company },
+        { label: 'Company type', value: p.kind },
+        { label: 'Dispatch contact', value: p.contact },
+        { label: 'Phone', value: p.phone },
+        { label: 'Email', value: p.email },
+        { label: 'Website or portal', value: p.site }
+      ]),
+      S('The work', [
+        { label: 'Type of work', value: p.workType },
+        { label: 'Calls per month', value: p.volume },
+        { label: 'Brands involved', value: p.brands },
+        { label: 'Territory needed', value: p.territory },
+        { label: 'Rate and trip charge', value: p.rate },
+        { label: 'Parts supplied by', value: p.parts },
+        { label: 'Requirements', value: p.requirements },
+        { label: 'Paperwork turnaround', value: p.paperwork },
+        { label: 'Notes', value: p.notes }
+      ])
+    ].filter(sec => sec.fields.length);
   }
 
   partnerSummary(p, ref) {
@@ -1317,7 +1433,18 @@ class Component extends DCLogic {
           counties: Object.keys(OUTSIDE.VA).map(k => ({ name: k, time: this.fmt(OUTSIDE.VA[k]) })) }
       ],
       f, fh,
-      lastRef: s.lastRef, lastSummary: s.lastSummary, mailtoLink: s.mailtoLink,
+      lastRef: s.lastRef, lastSummary: s.lastSummary,
+      submitting: !!s.submitting,
+      submitError: s.submitError || '',
+      hasSubmitError: !!s.submitError,
+      submitLabel: s.submitting ? 'Sending\u2026' : 'Submit request',
+      partnerSubmitLabel: s.submitting ? 'Sending\u2026' : 'Send subcontract request',
+      thanksLead: s.lastKind === 'partner'
+        ? 'Thank you for the subcontract request. It is in front of Justin now, and Tradewerx will reply with availability and terms. Keep the reference number handy in case you need to add anything.'
+        : 'Thank you. The request is in the queue and a copy is already in the Tradewerx inbox. Justin reviews every request himself and confirms the date by email, usually within one business day. Keep the reference number handy in case you need to add anything.',
+      thanksNote: s.lastKind === 'partner'
+        ? 'A copy of this request has been emailed to Tradewerx. Nothing else is needed from you.'
+        : 'A copy of this request, with any photos you added, has been emailed to Tradewerx. Nothing else is needed from you \u2014 the PDF below is just for your own records.',
       downloadPdf: () => this.makePdf(s.lastRef || 'request', s.lastSummary || '', s.lastPhotos || []),
       isPartners: route === 'partners',
       pf: s.pf || PARTNER_BLANK,
@@ -1326,20 +1453,26 @@ class Component extends DCLogic {
       partnerWork: ['Overflow service calls','Manufacturer warranty dispatches','Extended service plan claims','Second opinions and failed repairs','New install and startup checks'],
       partnerVolume: ['1 to 5','6 to 15','16 to 30','More than 30','Seasonal or occasional'],
       partnerParts: ['Partner supplies parts','Tradewerx orders parts','Depends on the claim'],
-      onPartnerSubmit: e => {
+      onPartnerSubmit: async e => {
         e.preventDefault();
+        if (s.submitting) return;
         const p = s.pf || PARTNER_BLANK;
-        const ref = 'TP-' + (2401 + (s.partners || []).length);
+        this.setState({ submitting: true, submitError: '' });
+
+        const result = await this.send('Subcontract request', this.partnerStructure(p),
+          { name: p.contact, email: p.email, phone: p.phone, company: p.company }, []);
+        if (!result || !result.ok) {
+          this.setState({ submitting: false, submitError: (result && result.message)
+            || ('Something went wrong. Please try again, or email ' + NOTIFY_TO + ' directly.') });
+          return;
+        }
+
+        const ref = result.ref;
         const summary = this.partnerSummary(p, ref);
-        const plink = 'mailto:' + NOTIFY_TO + '?subject=' + encodeURIComponent('SUBCONTRACT REQUEST ' + ref + ' from ' + p.company + ' (' + p.contact + ', ' + p.kind + ')') + '&body=';
-        this.notify('Subcontract request', ref, summary, p);
         this.save({ partners: (s.partners || []).concat([{ id: 'tp' + Date.now(), ref: ref, created: this.iso(new Date()), p: Object.assign({}, p) }]),
-          lastRef: ref, lastSummary: summary,
-          mailtoLink: plink + encodeURIComponent(summary), lastPhotos: [],
-          pf: Object.assign({}, PARTNER_BLANK) });
+          lastRef: ref, lastSummary: summary, lastKind: 'partner', lastPhotos: [],
+          submitting: false, submitError: '', pf: Object.assign({}, PARTNER_BLANK) });
         location.hash = '#thanks';
-        this.makePdf(ref, summary, []);
-        setTimeout(() => { window.location.href = plink + encodeURIComponent('The completed form is attached as tradewerx-' + ref + '.pdf, just downloaded to this device. Please attach it before sending. The same details are written out below.\n\n' + summary); }, 900);
       },
       countyNames: Object.keys(COUNTIES),
       photos: (s.photos || []).map((p, i) => ({ id: p.id, name: p.name, url: p.url, remove: () => this.setState({ photos: s.photos.filter(x => x.id !== p.id) }) })),
@@ -1400,26 +1533,29 @@ class Component extends DCLogic {
         { key:'pets', label:'Pets on the property', on:f.pets, toggle:fh.pets },
         { key:'priorVisit', label:'Another company has been out', on:f.priorVisit, toggle:fh.priorVisit }
       ],
-      onSubmit: e => {
+      onSubmit: async e => {
         e.preventDefault();
-        const n = 2603 + s.requests.length;
-        const ref = 'TW-' + n;
+        if (s.submitting) return;
+        this.setState({ submitting: true, submitError: '' });
+
         const shot = (s.photos || []).map(p => ({ name: p.name, url: p.url }));
         this._photoCount = shot.length;
-        const link = 'mailto:' + NOTIFY_TO + '?subject=' + encodeURIComponent('SERVICE REQUEST ' + ref + ' from ' + f.name + ' (' + (f.brand || 'appliance') + ' ' + (f.appliance || '').toLowerCase() + ', ' + f.city + ', ' + f.state + ')') + '&body=';
+
+        const result = await this.send('Service request', this.requestStructure(f), f, shot);
+        if (!result || !result.ok) {
+          this.setState({ submitting: false, submitError: (result && result.message)
+            || ('Something went wrong. Please try again, or email ' + NOTIFY_TO + ' directly.') });
+          return;
+        }
+
+        // The server owns the reference number, so no two customers can share one.
+        const ref = result.ref;
         const summary = this.summarize(f, ref);
-        this.notify('Service request', ref, summary, f);
         const req = { id: 'r' + Date.now(), ref, status: 'pending', created: this.iso(new Date()), f: Object.assign({}, f), photos: (s.photos || []).map(p => ({ id: p.id, name: p.name, url: p.url })) };
         this.save({ requests: s.requests.concat([req]), lastRef: ref, lastSummary: summary,
-          mailtoLink: link + encodeURIComponent(summary), lastPhotos: shot,
+          lastKind: 'service', lastPhotos: shot, submitting: false, submitError: '',
           f: Object.assign({}, BLANK), photos: [], candidates: [], scanStatus: '' });
         location.hash = '#thanks';
-        const pdfName = 'tradewerx-' + ref + '.pdf';
-        const note = 'The completed request form is attached as ' + pdfName + ', just downloaded to this device.'
-          + (shot.length ? ' It includes ' + shot.length + (shot.length === 1 ? ' photo' : ' photos') + '.' : '')
-          + ' Please attach that file to this email before sending. The same details are written out below.\n\n';
-        this.makePdf(ref, summary, shot);
-        setTimeout(() => { window.location.href = link + encodeURIComponent(note + summary); }, 900);
       },
       navItems: [
         { href: '#area', label: 'Service area' },
