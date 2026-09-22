@@ -25,7 +25,6 @@
 </script>
 <style id="__nojs"></style>
 <script>document.getElementById('__nojs').textContent='noscript{display:none!important}';</script>
-<script src="./image-slot.js"></script>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -100,7 +99,7 @@
           </div>
         </div>
         <div style="max-width:1180px; margin:0 auto; padding:0 24px 56px">
-          <div style="height:460px"><image-slot id="tw-hero" shape="rect" src="./photos/kitchen-hero.webp" alt="Finished kitchen with built in refrigeration, a professional range and wall ovens" placeholder="Hero photo: wide shot of a finished kitchen with Sub-Zero and Wolf, or Justin on a service call"></image-slot></div>
+          <div style="height:460px"><img src="./photos/kitchen-hero.webp" alt="Finished kitchen with built in refrigeration, a professional range and wall ovens" style="width:100%; height:100%; object-fit:cover; display:block" /></div>
         </div>
       </section>
 
@@ -125,7 +124,7 @@
               <h3 style="font-family:'Cormorant Garamond',serif; font-weight:400; font-size:40px; line-height:1.1; margin:0 0 18px">{{ f.title }}</h3>
               <p style="font-weight:300; font-size:16px; line-height:1.75; color:{{ f.body }}; margin:0">{{ f.text }}</p>
             </div>
-            <div style="min-height:400px; order:{{ f.imageOrder }}"><image-slot id="{{ f.slot }}" shape="rect" src="{{ f.img }}" alt="{{ f.alt }}" placeholder="{{ f.ph }}"></image-slot></div>
+            <div style="min-height:400px; order:{{ f.imageOrder }}"><img src="{{ f.img }}" alt="{{ f.alt }}" style="width:100%; height:100%; object-fit:cover; display:block" /></div>
           </sc-for>
         </div>
         <div style="margin:56px 0 0; border-top:1px solid #DCD3C4; padding-top:34px">
