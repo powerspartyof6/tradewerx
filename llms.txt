@@ -1,56 +1,129 @@
-# Tradewerx Inc.
+# Tradewerx Appliance Service
 
-> Independent appliance service company performing manufacturer warranty and out-of-warranty
-> repair on premium residential appliances throughout all 100 counties of North Carolina.
-> Based in Lenoir, NC (Caldwell County), western North Carolina.
+> Independent luxury appliance repair and maintenance, owned and operated by Justin Keatts.
+> Based in Lenoir, North Carolina. Travels throughout western North Carolina, eastern
+> Tennessee, upstate South Carolina and southern Virginia, and further when the job justifies it.
 
 ## Facts
 
-- Business name: Tradewerx Inc.
-- Owner/technician: Justin Keatts
-- Address: 2580 Hickory Blvd SW, Lenoir, NC 28645
+- Business name: Tradewerx Inc., trading as Tradewerx Appliance Service
+- Owner and technician: Justin Keatts, 20+ years in the trades, serving first responder
+- Base: Lenoir, North Carolina
 - Email: tradewerx.inc@gmail.com
-- Service area: all of North Carolina, plus South Carolina, Tennessee and Virginia within about an eight-hour drive; dispatch origin Lenoir, NC
-- Experience: 20+ years in the trades
-- Scheduling model: one service call per day, routed by drive time from Lenoir. Customers
-  submit a request; Tradewerx confirms the date.
+- Service area: western North Carolina, eastern Tennessee, upstate South Carolina, southern Virginia
+- Warranty: out of warranty work booked directly. For covered repairs, customers can request
+  Tradewerx through their manufacturer or service plan administrator. Direct brand
+  authorization is being established.
+- Scheduling: routed by drive time from Lenoir. A distant job may be the only call that day,
+  while work close to home can run up to eight calls in a day.
+- Discount: standing discount for active duty military, veterans and first responders.
 
-## Appliance brands serviced
+## Brands serviced
 
-Whirlpool, Bosch, Frigidaire, LG, Samsung, GE Appliances (GE / Café / Monogram),
-Sub-Zero, Wolf, Cove, Miele, Speed Queen.
+Blue Star, Miele, Wolf, Viking, Thermador, Bosch, Gaggenau, True, Speed Queen, Sub-Zero,
+Cove, U-Line, Scotsman, Fisher & Paykel, Liebherr, Bertazzoni, Aga, Marvel, DCS, Asko.
 
-## Appliance types serviced
+## Appliance categories
 
-Refrigerators and built-in refrigeration, freezers, wine and beverage centers, ranges,
-wall ovens, cooktops, range hoods and ventilation, dishwashers, washers, dryers,
-microwaves, ice makers, warming drawers.
+Refrigerators (freestanding and built in), freezers, under counter wine coolers, under counter
+beverage centers, under counter ice makers, dishwashers, freestanding ranges, microwaves,
+wall ovens, trash compactors, coffee makers, grills, ventilation, laundry.
+
+## Beyond repair
+
+Appliance installation, panel installation for panel ready appliances, pre purchase home
+inspection, second opinion diagnosis, dryer vent cleaning, refrigerator coil cleaning,
+ice machine descaling and sanitizing, annual maintenance visits.
+
+## Towns served routinely
+
+Lenoir, Hudson, Granite Falls, Hickory, Morganton, Valdese, Newton, Conover, Taylorsville,
+Wilkesboro, North Wilkesboro, Marion, Statesville, Mooresville, Boone, Blowing Rock,
+Banner Elk, Linville, Beech Mountain, Sugar Mountain, West Jefferson, Spruce Pine, Burnsville,
+Asheville, Black Mountain, Waynesville, Hendersonville, Brevard, Charlotte, Concord, Gastonia,
+Shelby, Salisbury, Winston-Salem, Clemmons, Mount Airy, Elkin (NC); Johnson City, Kingsport,
+Bristol, Elizabethton, Greeneville, Knoxville, Gatlinburg, Sevierville (TN); Abingdon,
+Wytheville, Martinsville, Danville, Blacksburg, Christiansburg, Roanoke (VA); Greenville,
+Spartanburg, Rock Hill, Fort Mill, Gaffney, Greer, Simpsonville, Anderson, Clemson (SC).
 
 ## Common questions
 
-Q: Does Tradewerx do warranty work?
-A: Yes. Tradewerx performs manufacturer warranty repairs for premium appliance providers,
-   as well as out-of-warranty and extended-service-plan repairs.
+Q: Why is my refrigerator not cooling but the freezer still works?
+A: A warm fresh food side with a cold freezer points at airflow between the compartments
+   rather than the compressor. Usual causes are a failed evaporator fan, a defrost fault
+   icing the coil, or a damper stuck closed. Clear the interior vents and vacuum the
+   condenser coils before calling.
 
-Q: What areas of North Carolina are covered?
-A: All of North Carolina. Drive time from Lenoir determines the scheduling date; eastern
-   and coastal counties are scheduled with more lead time.
+Q: Why is my dishwasher not draining?
+A: The drain path is blocked or the pump has failed. Clear the filter in the bottom of the
+   tub and check the air gap at the sink. On Miele this shows as F24, on Bosch as E24.
 
-Q: How do I book a service call?
-A: Submit the request form at /#request with appliance brand, model, serial number,
-   warranty or dispatch number, and a description of the symptom. Tradewerx confirms the
-   date by email.
+Q: Why does my dryer take two cycles to dry a load?
+A: Restricted venting, far more often than a failed heating element. Cleaning the duct
+   restores airflow, cuts drying time and removes a fire risk.
 
-Q: Is there a phone number?
-A: Contact is by email at tradewerx.inc@gmail.com. Requests submitted through the form
-   are answered fastest because they include the model and serial number needed to
-   pull parts.
+Q: Why is my ice maker not making ice?
+A: Start at the water supply, then look at scale on the evaporator. In under counter
+   machines from Scotsman, U-Line and Marvel, descaling often restores production.
+
+Q: Why is my wine cooler not holding temperature?
+A: Compact condensers need clear airflow. Check the front grille and the coils, and consider
+   ambient heat from an adjacent oven or dishwasher.
+
+Q: Can I request Tradewerx for a warranty repair?
+A: Yes. Ask your manufacturer or service plan administrator to send Tradewerx.
+
+Q: Do you offer a military or first responder discount?
+A: Yes, on every visit, for active duty military, veterans and first responders.
+
+## Brand pages (faults we see most, fix it guides, coverage)
+
+- https://tradewerxnc.com/repair/sub-zero/
+- https://tradewerxnc.com/repair/wolf/
+- https://tradewerxnc.com/repair/cove/
+- https://tradewerxnc.com/repair/miele/
+- https://tradewerxnc.com/repair/blue-star/
+- https://tradewerxnc.com/repair/thermador/
+- https://tradewerxnc.com/repair/gaggenau/
+- https://tradewerxnc.com/repair/viking/
+- https://tradewerxnc.com/repair/bosch/
+- https://tradewerxnc.com/repair/true/
+- https://tradewerxnc.com/repair/speed-queen/
+- https://tradewerxnc.com/repair/u-line/
+- https://tradewerxnc.com/repair/scotsman/
+- https://tradewerxnc.com/repair/fisher-paykel/
+- https://tradewerxnc.com/repair/liebherr/
+- https://tradewerxnc.com/repair/bertazzoni/
+- https://tradewerxnc.com/repair/aga/
+- https://tradewerxnc.com/repair/marvel/
+- https://tradewerxnc.com/repair/dcs/
+- https://tradewerxnc.com/repair/asko/
+
+## State pages
+
+- https://tradewerxnc.com/service-area/north-carolina/
+- https://tradewerxnc.com/service-area/tennessee/
+- https://tradewerxnc.com/service-area/south-carolina/
+- https://tradewerxnc.com/service-area/virginia/
+
+## Fix it guides (cause, four home checks, when to call)
+
+- https://tradewerxnc.com/help/refrigerator-not-cooling/
+- https://tradewerxnc.com/help/ice-maker-not-making-ice/
+- https://tradewerxnc.com/help/dishwasher-not-draining/
+- https://tradewerxnc.com/help/dryer-not-heating/
+- https://tradewerxnc.com/help/oven-not-heating/
+- https://tradewerxnc.com/help/wine-cooler-not-cooling/
+- https://tradewerxnc.com/help/washer-not-spinning/
+- https://tradewerxnc.com/help/range-burner-not-igniting/
+- https://tradewerxnc.com/help/refrigerator-leaking-water/
+- https://tradewerxnc.com/help/dishwasher-error-code/
 
 ## Pages
 
-- / — Home: services, brands, coverage, process, FAQ
-- /#request — Request a service call (intake form)
-- /#area — Service area: all 100 NC counties plus SC, TN and VA metros, with drive time from Lenoir
-- /#partners — Contract Tradewerx: subcontract request form for trade partners
-- /#contact — Contact and business details
-- /#dashboard — Internal scheduling dashboard (owner use)
+- / - Home: brands, categories, process, coverage, discount, FAQ
+- /#request - Request a service call (intake form with photo reading)
+- /#partners - Subcontract Tradewerx (for dealers, service companies and administrators)
+- /#area - Where we travel: regions and towns with drive times from Lenoir
+- /#contact - Contact details
+- /#dashboard - Internal scheduling board (owner use)
