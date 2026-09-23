@@ -1,0 +1,25 @@
+{
+  "name": "CISM Master Exam",
+  "short_name": "CISM Exam",
+  "description": "Practice exam and tracker built from ISACA CISM Practice Exams 1 and 2.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F2F4F3",
+  "theme_color": "#0E5F57",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
