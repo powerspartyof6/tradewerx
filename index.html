@@ -112,6 +112,30 @@
         </div>
       </section>
 
+      <section id="start" style="max-width:1180px; margin:0 auto; padding:64px 24px 0">
+        <div style="text-align:center; margin:0 0 34px">
+          <p style="font-size:10.5px; font-weight:500; letter-spacing:0.3em; text-transform:uppercase; color:#5E4F38; margin:0 0 14px">Warranty service</p>
+          <h2 style="font-family:'Cormorant Garamond',serif; font-weight:400; font-size:42px; line-height:1.1; margin:0">Three ways to start</h2>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:3px; background:#DCD3C4; border:1px solid #DCD3C4">
+          <div style="background:#fff; padding:30px 28px">
+            <p style="font-size:10.5px; font-weight:500; letter-spacing:0.28em; text-transform:uppercase; color:#5E4F38; margin:0 0 12px">01 &middot; I have a claim number</p>
+            <p style="font-weight:300; font-size:15.5px; line-height:1.7; color:#3E4757; margin:0 0 18px">Your manufacturer or service plan gave you a claim or dispatch number. Send the request with it and we schedule the call.</p>
+            <a href="#request" style="font-size:12px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:#5E4F38">Request service &rarr;</a>
+          </div>
+          <div style="background:#fff; padding:30px 28px">
+            <p style="font-size:10.5px; font-weight:500; letter-spacing:0.28em; text-transform:uppercase; color:#5E4F38; margin:0 0 12px">02 &middot; I might be covered</p>
+            <p style="font-weight:300; font-size:15.5px; line-height:1.7; color:#3E4757; margin:0 0 18px">Not sure, or just out of warranty? Our guide walks through opening a claim and asking for a goodwill repair, with scripts.</p>
+            <a href="/warranty/" style="font-size:12px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:#5E4F38">Read the warranty guide &rarr;</a>
+          </div>
+          <div style="background:#fff; padding:30px 28px">
+            <p style="font-size:10.5px; font-weight:500; letter-spacing:0.28em; text-transform:uppercase; color:#5E4F38; margin:0 0 12px">03 &middot; No warranty</p>
+            <p style="font-weight:300; font-size:15.5px; line-height:1.7; color:#3E4757; margin:0 0 18px">You are not turned away. Travel is billed at $1.50 per mile from Lenoir, with labor and parts quoted separately. You are invoiced after the visit.</p>
+            <a href="/warranty/#not-covered" style="font-size:12px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:#5E4F38">What to expect &rarr;</a>
+          </div>
+        </div>
+      </section>
+
       <section id="services" style="max-width:1180px; margin:0 auto; padding:74px 24px 10px">
         <div style="text-align:center; margin:0 0 44px">
           <p style="font-size:10.5px; font-weight:500; letter-spacing:0.3em; text-transform:uppercase; color:#5E4F38; margin:0 0 16px">What we service</p>
@@ -343,6 +367,9 @@
               <label style="display:flex; flex-direction:column; gap:6px; font-size:13px; font-weight:600; letter-spacing:0.05em; text-transform:uppercase; color:#3E4757">Purchase date
                 <input type="date" value="{{ f.purchased }}" onChange="{{ fh.purchased }}" style="border:1px solid #CFC4B2; border-radius:4px; padding:10px 12px; font-size:15px; font-weight:400; letter-spacing:0; text-transform:none; background:#FBF8F3" />
               </label>
+              <sc-if value="{{ warrantyNote }}" hint-placeholder-val="{{ false }}">
+                <p style="grid-column:1 / -1; margin:0; background:#F3EFE6; border:1px solid #DCD3C4; border-left:3px solid #B08D57; border-radius:4px; padding:12px 14px; font-size:14px; line-height:1.6; color:#3E4757">Without warranty coverage, travel is billed at $1.50 per mile from Lenoir, with labor and parts quoted separately, and you are invoiced after the visit. Before paying, <a href="/warranty/" style="color:#5E4F38; text-decoration:underline">see how to get the manufacturer to cover the repair</a>. If you have a claim or dispatch number, enter it above.</p>
+              </sc-if>
             </div>
           </fieldset>
 
@@ -1593,7 +1620,9 @@ class Component extends DCLogic {
           f: Object.assign({}, BLANK), photos: [], candidates: [], scanStatus: '' });
         location.hash = '#thanks';
       },
+      warrantyNote: f.warranty === 'Out of warranty' || f.warranty === 'Not sure',
       navItems: [
+        { href: '/warranty/', label: 'Warranty help' },
         { href: '#area', label: 'Service area' },
         { href: '#partners', label: 'Subcontract Tradewerx' },
         { href: '#contact', label: 'Contact' }

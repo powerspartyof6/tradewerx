@@ -76,6 +76,12 @@ A: Yes. Ask your manufacturer or service plan administrator to send Tradewerx.
 Q: Do you offer a military or first responder discount?
 A: Yes, on every visit, for active duty military, veterans and first responders.
 
+Q: What does Tradewerx charge when there is no warranty coverage?
+A: Travel is billed at $1.50 per mile from Lenoir, NC. Labor and parts are quoted separately. Nothing is charged through the website; customers are invoiced after the visit.
+
+Q: How do I get my warranty to cover a repair?
+A: Open a claim with the manufacturer or plan administrator, get a claim or dispatch number, and ask for a goodwill repair if the warranty just ended. Full guide: https://tradewerxnc.com/warranty/
+
 ## Brand pages (faults we see most, fix it guides, coverage)
 
 - https://tradewerxnc.com/repair/sub-zero/
@@ -127,3 +133,4 @@ A: Yes, on every visit, for active duty military, veterans and first responders.
 - /#area - Where we travel: regions and towns with drive times from Lenoir
 - /#contact - Contact details
 - /#dashboard - Internal scheduling board (owner use)
+- /warranty/ - Warranty help: how to get a manufacturer, plan or credit card to cover the repair
