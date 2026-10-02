@@ -129,7 +129,7 @@ A: Open a claim with the manufacturer or plan administrator, get a claim or disp
 
 - / - Home: brands, categories, process, coverage, discount, FAQ
 - /#request - Request a service call (intake form with photo reading)
-- /#partners - Subcontract Tradewerx (for dealers, service companies and administrators)
+- /#partners - Subcontract Tradewerx (warranty administrators, manufacturers, dealers and service companies can request Tradewerx as their warranty servicer or overflow subcontractor)
 - /#area - Where we travel: regions and towns with drive times from Lenoir
 - /#contact - Contact details
 - /#dashboard - Internal scheduling board (owner use)

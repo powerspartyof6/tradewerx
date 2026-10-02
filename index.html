@@ -93,6 +93,11 @@
     .ftr div[style*="flex-wrap:wrap"],.ftr div[style*="flex-wrap: wrap"]{gap:0 10px!important}
     .ftr div[style*="flex-direction:column"],.ftr div[style*="flex-direction: column"]{gap:0!important;display:grid!important;grid-template-columns:1fr 1fr}
     .ftr{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
+    .hero-eyebrow{margin-bottom:16px!important}
+    .hero-p{font-size:17px!important;line-height:1.55!important;margin-top:18px!important}
+    .hero-cta{margin-top:22px!important}
+    .prov-row{flex-direction:column;gap:10px!important;text-align:center}
+    .prov-btn{display:flex!important;align-items:center;justify-content:center;width:100%;min-height:52px;white-space:normal!important}
   }
   @media (min-width:390px) and (max-width:860px){.hdr-cta .l{display:inline}.hdr-cta .s{display:none}.hdr-logo .wm{font-size:14px!important;letter-spacing:.17em!important}}
   @media (max-width:340px){.hdr-logo .wm{display:none}}
@@ -178,12 +183,16 @@
     <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
       <section style="background:#F3EFE9">
         <div style="max-width:1180px; margin:0 auto; padding:clamp(35px,9.0vw,64px) clamp(20px,5.2vw,24px) clamp(26px,6.7vw,48px); text-align:center">
-          <p style="font-size:11.5px; font-weight:500; letter-spacing:0.3em; text-transform:uppercase; color:#5E4F38; margin:0 0 22px">Independent appliance service &middot; Western NC, Eastern TN, Upstate SC, Southern VA</p>
+          <p class="hero-eyebrow" style="font-size:11.5px; font-weight:500; letter-spacing:0.3em; text-transform:uppercase; color:#5E4F38; margin:0 0 22px">Independent appliance service &middot; Western NC, Eastern TN, Upstate SC, Southern VA</p>
           <h1 style="font-family:'Cormorant Garamond',serif; font-weight:400; font-size:clamp(38px,9.5vw,84px); line-height:0.98; letter-spacing:0.01em; text-transform:uppercase; margin:0; text-wrap:balance">Luxury Appliance<br />Repair</h1>
-          <p style="font-weight:300; font-size:18px; line-height:1.7; color:#3E4757; max-width:66ch; margin:26px auto 0; text-wrap:pretty">Service on the equipment that anchors a serious kitchen, from a technician with more than twenty years in the trades. Book out of warranty work directly, or ask your manufacturer to send Tradewerx on a covered claim.</p>
-          <div class="cta-row" style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:34px">
+          <p class="hero-p" style="font-weight:300; font-size:18px; line-height:1.7; color:#3E4757; max-width:66ch; margin:26px auto 0; text-wrap:pretty">Service on the equipment that anchors a serious kitchen, from a technician with more than twenty years in the trades. Book out of warranty work directly, or ask your manufacturer to send Tradewerx on a covered claim.</p>
+          <div class="cta-row hero-cta" style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:34px">
             <a href="#request" style="background:#B08D57; color:#101B2D; font-size:12.5px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; padding:17px 32px" style-hover="background:#C6A570">Request a service call</a>
             <a href="#area" style="border:1px solid #CFC4B2; color:#101B2D; font-size:12.5px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; padding:16px 32px" style-hover="border-color:#101B2D">Where we travel</a>
+          </div>
+          <div class="prov-row" style="margin:clamp(24px,6vw,36px) auto 0; max-width:680px; border-top:1px solid #DCD3C4; padding-top:clamp(18px,4.6vw,24px); display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:8px 18px">
+            <span style="font-size:14.5px; line-height:1.5; color:#4A5364">Warranty administrator, manufacturer or service company?</span>
+            <a class="prov-btn" href="#partners" style="border:1px solid #101B2D; color:#101B2D; font-size:12px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; padding:13px 20px; white-space:nowrap" style-hover="background:#101B2D; color:#F3EFE9">Subcontract Tradewerx &rarr;</a>
           </div>
         </div>
         <div style="max-width:1180px; margin:0 auto; padding:0 24px 56px">
@@ -318,15 +327,15 @@
       <section style="max-width:1180px; margin:0 auto; padding:clamp(41px,10.4vw,74px) clamp(20px,5.2vw,24px) 10px">
         <div style="background:#fff; border:1px solid #DCD3C4; border-top:4px solid #B08D57; border-radius:8px; padding:clamp(24px,6.4vw,44px) clamp(20px,5.5vw,40px); display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:48px; align-items:center">
           <div>
-            <p style="font-family:Outfit,sans-serif; font-size:13px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:#5E4F38; margin:0 0 14px">For appliance companies and warranty networks</p>
-            <h2 style="font-family:'Cormorant Garamond',serif; font-weight:400; font-size:clamp(27px,7.2vw,42px); line-height:1.02; text-transform:uppercase; margin:0 0 16px">Sub out your calls</h2>
-            <p style="font-size:17px; line-height:1.6; color:#3E4757; margin:0 0 20px; text-wrap:pretty">Dealers, builders, warranty administrators and other service companies use Tradewerx as overflow coverage for the mountains and foothills, where windshield time makes a route hard to justify. Send the dispatch, get the findings and photos back in writing.</p>
+            <p style="font-family:Outfit,sans-serif; font-size:13px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:#5E4F38; margin:0 0 14px">For warranty administrators, manufacturers and service companies</p>
+            <h2 style="font-family:'Cormorant Garamond',serif; font-weight:400; font-size:clamp(27px,7.2vw,42px); line-height:1.02; text-transform:uppercase; margin:0 0 16px">Subcontract Tradewerx</h2>
+            <p style="font-size:17px; line-height:1.6; color:#3E4757; margin:0 0 20px; text-wrap:pretty">Warranty administrators, manufacturers, dealers, builders and other service companies use Tradewerx as their warranty servicer and overflow coverage for the mountains and foothills, where windshield time makes a route hard to justify. Send the dispatch, get the findings and photos back in writing.</p>
             <ul style="margin:0 0 26px; padding:0 0 0 20px; display:flex; flex-direction:column; gap:8px; font-size:16px; line-height:1.5; color:#3E4757">
               <li>Overflow and travel-heavy dispatches taken one day at a time</li>
               <li>Written diagnosis, part numbers and photo documentation on every call</li>
               <li>Coverage across North Carolina and into upstate SC, east TN and southwest VA</li>
             </ul>
-            <a href="#partners" style="display:inline-block; background:#101B2D; color:#F3EFE9; font-weight:700; font-size:15px; letter-spacing:0.06em; text-transform:uppercase; padding:16px 30px; border-radius:5px" style-hover="background:#1B2941">Send a subcontract request</a>
+            <a href="#partners" style="display:inline-block; background:#101B2D; color:#F3EFE9; font-weight:700; font-size:15px; letter-spacing:0.06em; text-transform:uppercase; padding:16px 30px; border-radius:5px" style-hover="background:#1B2941">Request to work with Tradewerx</a>
           </div>
           <div style="background:#101B2D; color:#F3EFE9; border-radius:8px; padding:clamp(24px,5.6vw,30px) clamp(20px,5.6vw,32px)">
             <p style="font-family:Outfit,sans-serif; font-size:13px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#B08D57; margin:0 0 14px">What to send</p>
@@ -780,9 +789,9 @@
     <sc-if value="{{ isPartners }}" hint-placeholder-val="{{ false }}">
       <section style="background:#101B2D; color:#F3EFE9">
         <div style="max-width:1180px; margin:0 auto; padding:clamp(29px,7.3vw,52px) clamp(20px,5.2vw,24px) clamp(25px,6.4vw,46px)">
-          <p style="font-family:Outfit,sans-serif; font-size:13px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:#B08D57; margin:0 0 14px">Trade partners</p>
+          <p style="font-family:Outfit,sans-serif; font-size:13px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:#B08D57; margin:0 0 14px">Warranty servicer requests</p>
           <h1 style="font-family:'Cormorant Garamond',serif; font-weight:400; font-size:clamp(35px,9.5vw,55px); line-height:1; text-transform:uppercase; margin:0 0 14px">Subcontract Tradewerx</h1>
-          <p style="font-size:17px; line-height:1.6; color:#C3CAD6; max-width:76ch; margin:0">For appliance dealers, service companies, warranty administrators, builders, and property owners interested in subcontracting with Tradewerx, please complete this form. We will contact you at our earliest availability to discuss a potential partnership.</p>
+          <p style="font-size:17px; line-height:1.6; color:#C3CAD6; max-width:76ch; margin:0">Warranty administrators, manufacturers, service companies, dealers, builders and property managers: use this form to request Tradewerx as your warranty servicer or overflow subcontractor in western North Carolina, eastern Tennessee, upstate South Carolina and southern Virginia. Tell us your brands, territory, rate and paperwork requirements, and Tradewerx will reply with availability and terms.</p>
         </div>
       </section>
 
@@ -947,15 +956,25 @@
       <section style="max-width:760px; margin:0 auto; padding:clamp(48px,12.3vw,88px) clamp(20px,5.2vw,24px) clamp(61px,15.4vw,110px)">
         <p style="font-family:Outfit,sans-serif; font-size:14px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:#5E4F38; margin:0 0 14px">Request received</p>
         <h1 style="font-family:'Cormorant Garamond',serif; font-weight:400; font-size:clamp(34px,9.1vw,53px); line-height:1.02; text-transform:uppercase; margin:0 0 18px">Reference {{ lastRef }}</h1>
-        <p style="font-size:18px; line-height:1.6; color:#3E4757; margin:0 0 26px; text-wrap:pretty">The request is in the queue. Tradewerx confirms the date by email. Keep the reference number handy in case you need to add anything.</p>
+        <sc-if value="{{ isServiceThanks }}" hint-placeholder-val="{{ true }}">
+          <p style="font-size:18px; line-height:1.6; color:#3E4757; margin:0 0 26px; text-wrap:pretty">The request is in the queue. Tradewerx confirms the date by email. Keep the reference number handy in case you need to add anything.</p>
+        </sc-if>
+        <sc-if value="{{ isPartnerThanks }}" hint-placeholder-val="{{ false }}">
+          <p style="font-size:18px; line-height:1.6; color:#3E4757; margin:0 0 26px; text-wrap:pretty">Your subcontract request is logged. Tradewerx reviews it and replies by email with availability, rates and insurance documents. Keep the reference number handy in case you need to add anything.</p>
+        </sc-if>
         <div style="background:#fff; border:1px solid #DCD3C4; border-radius:8px; padding:24px 26px; margin:0 0 28px">
           <p style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:12.5px; line-height:1.55; white-space:pre-wrap; color:#3E4757; margin:0">{{ lastSummary }}</p>
         </div>
+        <sc-if value="{{ isServiceThanks }}" hint-placeholder-val="{{ true }}">
         <p style="font-size:14px; line-height:1.6; color:#5A6274; margin:0 0 26px">Justin reviews every request himself and confirms the date by email, usually within one business day. A copy of this request has already been emailed to you for your records — no further steps needed on your end.</p>
         <div style="background:#F3EFE6; border:1px solid #DCD3C4; border-left:3px solid #B08D57; border-radius:6px; padding:20px 22px; margin:0 0 30px">
           <p style="font-family:Outfit,sans-serif; font-size:11px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:#5E4F38; margin:0 0 10px">About Tradewerx</p>
           <p style="font-size:14.5px; line-height:1.65; color:#3E4757; margin:0">Tradewerx is family owned and operated, based in Lenoir and run by Justin Keatts, with more than twenty years in the trades. One service call a day, routed by drive time from the shop — which is why the date gets confirmed rather than promised up front. You are dealing with the person who will be standing in front of the appliance.</p>
         </div>
+        </sc-if>
+        <sc-if value="{{ isPartnerThanks }}" hint-placeholder-val="{{ false }}">
+          <p style="font-size:14px; line-height:1.6; color:#5A6274; margin:0 0 30px">If the territory or brands are a fit, Tradewerx will say so plainly, and if they are not, you will hear that too. A copy of this request has already been emailed to you for your records — no further steps needed on your end.</p>
+        </sc-if>
         <div class="cta-row" style="display:flex; gap:14px; flex-wrap:wrap">
           <button type="button" onClick="{{ downloadPdf }}" style="cursor:pointer; background:#B08D57; color:#101B2D; border:none; font-weight:700; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; padding:15px 26px; border-radius:5px" style-hover="background:#C6A570">Download a copy as PDF</button>
           <a href="#home" style="border:1px solid #CFC4B2; color:#101B2D; font-weight:600; font-size:14px; letter-spacing:0.06em; text-transform:uppercase; padding:15px 26px; border-radius:5px" style-hover="border-color:#101B2D">Back to home</a>
@@ -1044,7 +1063,7 @@ const PARTNER_BLANK = { company:'', kind:'Appliance dealer or retailer', contact
 
 class Component extends DCLogic {
   state = { route: (location.hash || '#home').slice(1), f: Object.assign({}, BLANK),
-    requests: [], jobs: [], blocked: [], monthShift: 0, sel: null, drag: null, lastRef: '', lastSummary: '',
+    requests: [], jobs: [], blocked: [], monthShift: 0, sel: null, drag: null, lastRef: '', lastSummary: '', lastKind: '',
     submitting: false, submitError: '', menuOpen: false };
 
   componentDidMount() {
@@ -1596,6 +1615,8 @@ class Component extends DCLogic {
       ],
       f, fh,
       lastRef: s.lastRef, lastSummary: s.lastSummary,
+      isPartnerThanks: s.lastKind === 'partner',
+      isServiceThanks: s.lastKind !== 'partner',
       submitting: !!s.submitting,
       submitError: s.submitError || '',
       hasSubmitError: !!s.submitError,
@@ -1624,7 +1645,7 @@ class Component extends DCLogic {
         const ref = result.ref;
         const summary = this.partnerSummary(p, ref);
         this.save({ partners: (s.partners || []).concat([{ id: 'tp' + Date.now(), ref: ref, created: this.iso(new Date()), p: Object.assign({}, p) }]),
-          lastRef: ref, lastSummary: summary, lastPhotos: [],
+          lastRef: ref, lastSummary: summary, lastPhotos: [], lastKind: 'partner',
           submitting: false, submitError: '',
           pf: Object.assign({}, PARTNER_BLANK) });
         location.hash = '#thanks';
@@ -1704,7 +1725,7 @@ class Component extends DCLogic {
         const summary = this.summarize(f, ref);
         const req = { id: 'r' + Date.now(), ref, status: 'pending', created: this.iso(new Date()), f: Object.assign({}, f), photos: (s.photos || []).map(p => ({ id: p.id, name: p.name, url: p.url })) };
         this.save({ requests: s.requests.concat([req]), lastRef: ref, lastSummary: summary,
-          lastPhotos: shot, submitting: false, submitError: '',
+          lastKind: 'service', lastPhotos: shot, submitting: false, submitError: '',
           f: Object.assign({}, BLANK), photos: [], candidates: [], scanStatus: '' });
         location.hash = '#thanks';
       },
